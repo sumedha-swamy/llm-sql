@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+black = "*"
+python-dotenv = "*"
+sqlalchemy = "==1.4.48"
+openai = "*"
+sqlalchemy-redshift = "*"
+psycopg2-binary = "*"
+streamlit = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.11"
