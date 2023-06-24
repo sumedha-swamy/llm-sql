@@ -7,5 +7,5 @@ def get_redshift_endpoint() -> str:
     host = os.environ["REDSHIFT_HOST"]
     port = os.environ["REDSHIFT_PORT"]
     database = os.environ["REDSHIFT_DATABASE"]
-    redshift_endpoint = f"redshift+psycopg2://username:password@host:port/database"
+    redshift_endpoint = f"redshift+psycopg2://{username}:{password}@{host}:{port}/{database}"
     return redshift_endpoint
